@@ -371,8 +371,13 @@ main{
 /* footer img */
 
 .footer-img{
+    z-index: -1;
     width: 100%;
     padding-top: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 46.5px;
     background-image: url('../img/footerpicture.jpg');
 }
 
