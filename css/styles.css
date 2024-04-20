@@ -1,0 +1,401 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+header{
+
+}
+
+/*         menu-nav */
+
+header .menu-nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+header .menu-nav .nav-list{
+    display: flex;
+}
+
+.menu-nav a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 8000;  
+    width: 100%;
+    height: 100%;
+    padding: 12px 24px;
+
+}
+.menu-nav li{
+    list-style: none;
+    position: relative;
+    height: 46.5px;
+}
+
+.menu-nav li .ti-angle-down{
+    font-size: 10px;
+}
+
+.menu-nav li:hover{
+    background-color: #ccc;
+}
+
+.menu-nav li:hover a{
+    color: black;
+}
+
+.menu-nav li:hover .sub-nav{
+    background-color: white;
+    display: block;
+}
+
+/* sub-nav */
+
+.menu-nav .sub-nav{
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    display: none;
+    z-index: 10;
+}
+
+.sub-nav li{
+    width: 150px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.sub-nav a{
+    text-transform: capitalize;
+}
+
+/* search-button */
+.search-button{
+    width: 62px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.search-button .ti-search{
+    line-height: 46.5px;
+    margin-right: 22px;
+}
+
+/* in mobile */
+
+.mobile-nav{
+    display: none;
+}
+
+.search-button-mobile{
+    display: none;
+}
+
+.search-button .ti-search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14px;
+    height: 15px;
+   font-weight: 900;
+}
+
+.search-button:hover{
+    background-color: #F44336;
+}
+
+.appearInMoblie{
+    display: none;
+}
+/* slider */
+
+.slider{
+    z-index: -1;
+    width: 100%;
+    padding-top: 50%;
+    background-image: url('../img/theband.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 46.5px;
+}
+
+.slider .slider-descript{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    color: white;
+    padding: 30px 10px;
+}
+
+.slider .slider-descript h3{
+    margin: 10px 0px;
+}
+
+.slider .slider-descript p{
+    margin: 15px 0px;
+}
+
+/* main */
+
+main{
+
+}
+
+/* the band */
+.container{
+    width: 800px;
+    max-width: 100%; /*Nếu như chiều rộng của màn hình thấp hơn 800px thì ngay lập tức container sẽ lấy chiều rộng của màn hình đó ngay và bỏ chiều rộng 800px  ban đầu đi*/
+    margin: 0px auto;
+    padding: 64px 16px;
+}
+
+#the-band{
+
+}
+
+.container .header-section{
+    text-align: center;
+}
+
+.container .header-section .title-name{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 100;
+    margin: 10px 0px;
+    letter-spacing: 5px;
+}
+
+.container .header-section .sub-title{
+    color: rgb(179, 170, 170);
+    margin: 15px 0px;
+}
+
+.container .descript{
+    line-height: 20px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+/* illustration image section */
+.illustration-img{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 40px;
+}
+
+.illustration-img .img-container{
+
+}
+
+.illustration-img .img-container .img-name{
+
+}
+
+.img-container .img-name{
+    text-align: center;
+    font-weight: 500;
+    margin: 15px 0px;
+}
+
+.illustration-img .img-container .img-section{
+    width: 155px;
+}
+
+.img-section img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+/* Tour Date */
+
+.black-container{
+    width: 100%;
+    background-color: black;
+}
+
+#tour-date .title-name{
+    color: white;
+}
+
+/* date */
+.date{
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f4f4;
+    margin: 30px 0px;
+}
+.date p, span{
+    display: inline-block;
+}
+
+.date .month{
+    padding: 8px 16px;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgb(194, 191, 191);
+}
+.date .sold-out{
+    margin-left: 15px;
+    padding: 3px 8px;
+    background-color: #F44336;
+    color: white;
+}
+.date .ticket-numbers{
+    display: inline-block;
+    float: right;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    padding: 3px 8px;
+}
+
+/* ticket section */
+
+.city-ticket{
+    display: flex;
+    justify-content: space-between;
+}
+
+.city-ticket .ticket{
+    width: 31.901041%;
+    display: flex;
+    flex-direction: column;
+}
+
+.city-ticket .ticket img{
+    width: 100%;
+    
+}
+
+.city-ticket .ticket img:hover{
+    opacity: 0.6;
+}
+
+.ticket .ticket-descript{
+    background-color: white;
+    margin-top: -5px;
+    padding: 15px 16px;
+}
+
+.ticket .ticket-descript .city-name{
+    font-weight: 600;
+}
+.ticket .ticket-descript .ticket-date{
+    margin: 15px 0;
+    color:rgb(187, 183, 183);
+}
+
+.ticket .ticket-descript .ticket-infor{
+    margin: 15px 0;
+}
+.button{
+    cursor: pointer;
+    color: white;
+    padding: 15px 20px;
+    background-color: black;
+    border: none;
+    font-size: 15px;
+}
+
+.button:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+/* contact-section */
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 32px 0;
+}
+
+.contact-infor{
+    flex-basis: 80%;
+}
+
+.contact-infor i{
+    padding-right: 9px;
+}
+
+/* typing section */
+.typing-infor{
+    position: relative;
+}
+
+.typing-infor .name{
+    width: 48%;
+}
+
+.typing-infor input{
+    height: 40px;
+    padding-left: 10px;
+}
+.typing-infor .message{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.typing-infor .email{
+    float: right;
+    width: 48%;
+}
+.typing-infor .button{
+    position: absolute;
+    right: 0px;
+    top: calc(100% + 20px)
+}
+
+/* footer img */
+
+.footer-img{
+    width: 100%;
+    padding-top: 50%;
+    background-image: url("/assets/img/footerpicture.jpg");
+}
+
+footer{
+    padding: 64px 16px;
+    text-align: center;
+    opacity: 0.6;
+    
+}
+
+.icon-section{
+    margin-bottom: 30px;
+}
+
+.icon-section i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.icon-section i:hover{
+    opacity: 0.3;
+}
+
+
+
+

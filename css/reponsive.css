@@ -1,0 +1,118 @@
+/* phone */
+
+@media only screen and (max-width: 739px){
+
+    /* header */
+
+    header .search-button{
+        display: none;
+    }
+    header .nav-list{
+        display: block !important;
+        width: 100%;
+        position: relative;
+    }
+    .nav-list li:first-child{
+        width: 93px;
+    }
+
+    .notSupportInMobile{
+        display: none !important;
+    }
+
+    .appearInMobile{
+        display: block !important;
+    }
+    .nav-list li + li{
+    }
+
+    .search-button-mobile,
+    .mobile-nav{
+        display: block
+    }
+    .search-button-mobile{
+        height: 46.5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 100;
+    }
+    .search-button-mobile{
+        display: block;
+        color: white;
+        padding: 12px 24px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .search-button-mobile:hover{
+        background-color: #ccc;
+        color: black;
+
+    }
+    /* slide */
+    .slider .slider-descript{
+        display: none;
+    }
+    /* member */
+    .illustration-img{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .illustration-img .img-container .img-section{
+        width: 215px;
+        
+    }
+    .illustration-img .img-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* ticket */
+    .city-ticket{
+        flex-direction: column;
+        gap: 2rem;
+        align-content: space-evenly;
+    }
+
+    .city-ticket .ticket{
+        width: 100%;
+        
+    }
+    /* contact */
+    .contact-section{
+        flex-direction: column;
+        gap: 20px;
+        padding: 100px 0px;
+    }
+    .contact-infor{
+        width: 100%;
+    }
+
+    .typing-infor input{
+        
+    }
+
+    .typing-infor .name{
+        width: 100%;
+    }
+
+    .typing-infor .email{
+        display: block;
+        float: none;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ipad */
